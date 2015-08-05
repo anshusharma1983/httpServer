@@ -13,7 +13,7 @@ should return a table that shows all the current connections and how much time t
 
 __POST /kill__ <br>
 with arguments <br>
-__connid=1__
+__connid=1__ <br>
 returns immediately, and also causes the connection with connid=X to return immediately with response {“stat”:killed}. The response to this request should be {“stat”:ok} (unless the request wasn’t found in which case you should decide what the most appropriate response is.
 <br>
 
