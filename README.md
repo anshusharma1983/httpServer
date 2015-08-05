@@ -14,8 +14,9 @@ should return a table that shows all the current connections and how much time t
 __POST /kill__ <br>
 with arguments <br>
 __connid=1__
-<p>
+
 Returns immediately, and also causes the connection with connid=X to return immediately with response {“stat”:killed}. The response to this request should be {“stat”:ok} (unless the request wasn’t found in which case you should decide what the most appropriate response is.
+<br>
 
 The last catch is that your VP of Engineering doesn’t believe that any HTTP library will be as performance as one that you write yourself (you really need a new job) so has forbidden you from using one. So be prepared to read/write from sockets yourself and to parse/prepare the responses yourself. You can use json libraries.
 
@@ -25,4 +26,3 @@ As efficiently as possible (be prepared to discuss techniques and your choices)
 Without using an HTTP library
 
 You may use any language you want, but bear in mind that if it’s archaic and I don’t know it it will be difficult to evaluate the quality of code. For reference, ht HTTP RFC is google-able (search for HTTP RFC)
-</p>
