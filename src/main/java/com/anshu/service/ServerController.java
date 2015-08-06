@@ -10,7 +10,7 @@ import java.util.concurrent.ScheduledExecutorService;
 
 import com.anshu.command.Command;
 
-public class ServerController extends Thread {
+public class ServerController {
 
 	private static ScheduledExecutorService executorService;
 
